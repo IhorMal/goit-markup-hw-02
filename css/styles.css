@@ -1,5 +1,54 @@
+:root {
+    --main-font: Roboto,sans-serif;
+    --minor-font: Raleway,sans-serif;
+
+    /* text colors */
+    --accent-cl: #2196F3;
+    --main-txt-cl: #757575;
+    --secondary-txt-cl: #212121;
+    
+    /* bacground colors */
+    --main-bg-cl: #ECECEC;
+    --secondary-bg-cl: #ECECEC;
+    --dark-bg-cl: #2F303A;
+}
+
 body {
-    font-family: Roboto, sans-serif;
+    color: var(--main-txt-cl);
+    font-family: var(--main-font);
+    background-color: var(--main-bg-cl);
+    letter-spacing: 0.03em;
+}
+/* Hiddent title */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/*=============== Header ===============*/
+
+.header .nav-logo,
+.footer .footer-logo {
+    font-family: var(--minor-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-cl);
+}
+
+.logo-dark {
+    color: #000000;
+
 }
 
 .link {
@@ -7,7 +56,221 @@ body {
 }
 
 
+.nav-link,
+.footer-list {
+    color: var(--secondary-txt-cl);
+}
+
+.active {
+    color: var(--accent-cl);
+}
+
+
+.nav .nav-link:hover,
+.nav .nav-link:active,
+.header-link:hover,
+.header-link:active{
+    color: var(--accent-cl);
+}
+
+.header-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+}
+
+.list {
+    list-style: none;
+}
+
+.header-link {
+    color: var(--main-txt-cl);
+    
+}
+
+
+
+/*===================================== Main =================================*/
+
+
+/*=============== Section Hero ===============*/
+
+.hero {
+    background-color: var(--dark-bg-cl);
+    color: #fff;
+    
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
 
 .btn {
-    font-family: Roboto, sans-serif;
+    font-family: var(--main-font);
+    cursor: pointer;
+}
+
+.hero-btn {
+    background-color: var(--accent-cl);
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    color: currentColor;
+}
+
+.hero-btn:hover, 
+.hero-btn:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*=============== Section Specifics ===============*/
+
+.specifics-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-txt-cl);
+}
+
+.specifics-text {
+    font-size: 14px;
+    line-height: 1,7;
+}
+
+/*=============== Section Work ===============*/
+
+
+.work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,2;
+    text-align: center;
+    color: var(--secondary-txt-cl);
+
+}
+
+/*=============== Section Our team ===============*/
+
+.team {
+    border-color: #F5F4FA;
+}
+
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,2;
+    text-align: center;
+    color: var(--secondary-txt-cl);
+    
+}
+
+.team-item {
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+.team-text {
+    font-weight: 500;
+    line-height: 1,19;
+    color: var(--secondary-txt-cl);
+}
+
+.team-desc {
+    line-height: 1,19;
+}
+
+
+
+/*=============== Footer ===============*/
+
+
+.footer {
+    background-color: var(--dark-bg-cl);
+}
+
+.logo-white {
+    color: #fff;
+}
+
+.footer .footer-address {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1,71;
+}
+
+.footer-link { 
+    font-size: 14px;
+    line-height: 24px;   
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:active{
+    color: var(--accent-cl);
+}
+
+
+
+
+
+
+
+/* 
+==============================================================================
+                            Portfolio
+==============================================================================
+*/
+
+
+
+/*=============== Section portfolio ===============*/
+
+
+.portfolio-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--secondary-txt-cl);
+}
+
+.active-btn {
+    background-color:var(--accent-cl);
+    color: #fff;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:active {
+    background-color: var(--accent-cl);
+    color: #fff;
+}
+
+
+.portfolio-link {
+    background-color: #EEEEEE;
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-txt-cl);
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1,88;
+    color: var(--main-txt-cl);
+
+
 }
