@@ -170,8 +170,6 @@ body {
 
 .footer .footer-address {
     color: #fff;
-    font-size: 14px;
-    line-height: 1.71;
 }
 
 .footer-link { 
@@ -185,6 +183,7 @@ body {
 .footer-link:active{
     color: var(--accent-cl);
 }
+
 /* 
 ==============================================================================
                             Portfolio
