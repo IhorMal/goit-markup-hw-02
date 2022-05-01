@@ -1,18 +1,15 @@
 :root {
     --main-font: Roboto,sans-serif;
     --minor-font: Raleway,sans-serif;
-
     /* text colors */
     --accent-cl: #2196F3;
     --main-txt-cl: #757575;
     --secondary-txt-cl: #212121;
-    
     /* bacground colors */
     --main-bg-cl: #ECECEC;
     --secondary-bg-cl: #ECECEC;
     --dark-bg-cl: #2F303A;
 }
-
 body {
     color: var(--main-txt-cl);
     font-family: var(--main-font);
@@ -20,7 +17,6 @@ body {
     letter-spacing: 0.03em;
 }
 /* Hiddent title */
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -33,10 +29,7 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-
 /*=============== Header ===============*/
-
 .header .nav-logo,
 .footer .footer-logo {
     font-family: var(--minor-font);
@@ -48,13 +41,11 @@ body {
 
 .logo-dark {
     color: #000000;
-
 }
 
 .link {
     text-decoration: none;
 }
-
 
 .nav-link,
 .footer-list {
@@ -65,7 +56,6 @@ body {
     color: var(--accent-cl);
 }
 
-
 .nav .nav-link:hover,
 .nav .nav-link:active,
 .header-link:hover,
@@ -73,7 +63,8 @@ body {
     color: var(--accent-cl);
 }
 
-.header-list {
+.header-list,
+.nav-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
@@ -89,17 +80,10 @@ body {
     
 }
 
-
-
-/*===================================== Main =================================*/
-
-
 /*=============== Section Hero ===============*/
-
 .hero {
     background-color: var(--dark-bg-cl);
     color: #fff;
-    
 }
 
 .hero-title {
@@ -132,7 +116,6 @@ body {
 }
 
 /*=============== Section Specifics ===============*/
-
 .specifics-title {
     font-weight: 700;
     font-size: 14px;
@@ -143,35 +126,22 @@ body {
 
 .specifics-text {
     font-size: 14px;
-    line-height: 1,7;
+    line-height: 1.7;
 }
 
 /*=============== Section Work ===============*/
-
-
-.work-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1,2;
-    text-align: center;
-    color: var(--secondary-txt-cl);
-
-}
-
-/*=============== Section Our team ===============*/
-
-.team {
-    border-color: #F5F4FA;
-}
-
-
+.work-title,
 .team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,2;
+    line-height: 1.2;
     text-align: center;
     color: var(--secondary-txt-cl);
-    
+}
+
+/*=============== Section Our team ===============*/
+.team {
+    border-color: #F5F4FA;
 }
 
 .team-item {
@@ -181,19 +151,15 @@ body {
 }
 .team-text {
     font-weight: 500;
-    line-height: 1,19;
+    line-height: 1.19;
     color: var(--secondary-txt-cl);
 }
 
 .team-desc {
-    line-height: 1,19;
+    line-height: 1.19;
 }
 
-
-
 /*=============== Footer ===============*/
-
-
 .footer {
     background-color: var(--dark-bg-cl);
 }
@@ -205,12 +171,13 @@ body {
 .footer .footer-address {
     color: #fff;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
 }
 
 .footer-link { 
+    font-style:initial;
     font-size: 14px;
-    line-height: 24px;   
+    line-height: 1.7;   
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -218,23 +185,12 @@ body {
 .footer-link:active{
     color: var(--accent-cl);
 }
-
-
-
-
-
-
-
 /* 
 ==============================================================================
                             Portfolio
 ==============================================================================
 */
-
-
-
 /*=============== Section portfolio ===============*/
-
 
 .portfolio-btn {
     font-weight: 500;
@@ -254,7 +210,6 @@ body {
     color: #fff;
 }
 
-
 .portfolio-link {
     background-color: #EEEEEE;
 }
@@ -269,8 +224,6 @@ body {
 
 .portfolio-text {
     font-size: 16px;
-    line-height: 1,88;
+    line-height: 1.88;
     color: var(--main-txt-cl);
-
-
 }
