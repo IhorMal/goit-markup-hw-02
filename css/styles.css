@@ -112,6 +112,7 @@ body {
 
 .hero-btn:hover, 
 .hero-btn:active {
+    background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -168,7 +169,7 @@ body {
     color: #fff;
 }
 
-.footer .footer-address {
+.footer .address {
     color: #fff;
 }
 
